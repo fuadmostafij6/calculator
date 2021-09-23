@@ -1,0 +1,61 @@
+:root {
+  --bg: #13171b;
+  --white: #ffffff;
+  --darkBox: rgba(0, 0, 0, 0.4);
+  --darkBoxs: rgba(255, 255, 255, 0.05);
+  --result: rgb(108, 108, 255);
+  --lightBox: rgba(0, 0, 0, 0.1);
+  --light: rgba(255, 255, 255, 0.527);
+}
+body {
+  background-color: var(--bg);
+  color: var(--white);
+}
+#main {
+  width: 60%;
+  margin: 50px auto 0 auto;
+}
+#d {
+  text-align: right;
+  height: 80px;
+  color: var(--white);
+}
+#r {
+  height: 100px;
+  text-align: right;
+  color: var(--result);
+  font-size: 35px;
+}
+
+ul {
+  padding: 0;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+
+  height: 60px;
+  width: 60px;
+  margin-bottom: -10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--white);
+  text-align: center;
+  line-height: 60px;
+  box-shadow: 5px 5px 12px -1px var(--darkBox),
+    -5px -5px 12px -1px var(--darkBoxs);
+}
+.light {
+  background-color: var(--light);
+  color: var(--bg);
+}
+.light:hover {
+  box-shadow: -6px -6px 12px -1px var(--lightBox);
+}
